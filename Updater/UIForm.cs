@@ -208,6 +208,7 @@ namespace Updater
             // _mnuExite
             // 
             this._mnuExite.Index = 0;
+            this._mnuExite.Shortcut = System.Windows.Forms.Shortcut.AltF4;
             this._mnuExite.Text = "Выход";
             this._mnuExite.Click += new System.EventHandler(this._mnuExite_Click);
             // 
@@ -221,6 +222,7 @@ namespace Updater
             // _mnuAboout
             // 
             this._mnuAboout.Index = 0;
+            this._mnuAboout.Shortcut = System.Windows.Forms.Shortcut.CtrlH;
             this._mnuAboout.Text = "О программе";
             this._mnuAboout.Click += new System.EventHandler(this._mnuAboout_Click);
             // 
