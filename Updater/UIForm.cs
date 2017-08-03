@@ -336,7 +336,7 @@ namespace Updater
             cnn.Close();
 
             //Вывод в таблицу информации при загрузке файлов из БД
-            using (SqlDataAdapter a = new SqlDataAdapter("SELECT version, name, Date FROM Srv_ProgramFile", cnn))
+            using (SqlDataAdapter a = new SqlDataAdapter("SELECT version, name, Date, hashCode FROM Srv_ProgramFile", cnn))
             {
                 SqlCommandBuilder cb = new SqlCommandBuilder(a);
                 DataSet ds = new DataSet();
